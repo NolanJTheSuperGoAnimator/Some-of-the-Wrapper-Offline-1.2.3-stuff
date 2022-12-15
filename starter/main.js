@@ -38,7 +38,6 @@ module.exports = {
 					var thumbPath = fUtil.getFileIndex('thumb-', '.xml', suffix);
 					fs.unlinkSync(moviePath);
 					fs.unlinkSync(thumbPath);
-					caché.clearTable(mId);
 					res(mId);
 					break;
 				}
